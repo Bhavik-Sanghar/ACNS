@@ -52,7 +52,6 @@ public class DES1 {
     // Perform circular left shift by a given number of positions
     public static int[] leftShift(int[] half, int shifts) {
         int[] shiftedHalf = new int[28];
-
         // Circular left shift
         for (int i = 0; i < 28; i++) {
             shiftedHalf[i] = half[(i + shifts) % 28];
